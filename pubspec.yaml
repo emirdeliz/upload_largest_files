@@ -1,0 +1,33 @@
+name: upload_largest_files
+description: A flutter web plugin to upload largest files in web.
+version: 0.0.1
+homepage: https://github.com/emirdeliz/upload_largest_files
+
+environment:
+  sdk: '>=2.18.5 <3.0.0'
+  flutter: '>=2.5.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  integration_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    # These assets are compiled from the project Upload largest files.
+    # https://github.com/emirdeliz/upload-largest-files.
+    - assets/index.js
+    - assets/upload-largest-files.js
+  plugin:
+    platforms:
+      web:
+        pluginClass: UploadLargestFilesPlugin
+        fileName: upload_largest_files_plugin.dart
