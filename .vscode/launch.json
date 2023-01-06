@@ -10,7 +10,7 @@
 			"type": "dart",
 			"cwd": "example",
 			"args": ["--web-port=9191", "--web-hostname=0.0.0.0", "--release"],
-			"program": "lib/main.dart"
+			"program": "lib/client/main.dart"
 		}
 	]
 }
