@@ -31,3 +31,4 @@ example/__upload__
 .dart_tool/
 .packages
 build/
+assets/test_resources

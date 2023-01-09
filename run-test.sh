@@ -1,5 +1,6 @@
 #!/bin/sh
-cd driver_test && ./chromedriver --port=4444 &
+cp -R test_resources assets &&
+	cd driver_test && ./chromedriver --port=4444 &
 flutter drive \
 	--driver=driver_test/integration_test.dart \
 	--target=integration_test/upload_largest_files_test.dart \

@@ -24,8 +24,7 @@ flutter:
   assets:
     # These assets are compiled from the project Upload largest files.
     # https://github.com/emirdeliz/upload-largest-files.
-    - assets/index.js
-    - assets/upload-largest-files.js
+    - assets/
   plugin:
     platforms:
       web:
