@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:upload_largest_files/upload_largest_files_app.dart';
+import 'package:upload_largest_files_example/client/upload_largest_files_app.dart';
 
 void main() {
   runApp(const UploadLargestFilesApp());

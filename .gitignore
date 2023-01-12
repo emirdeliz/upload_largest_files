@@ -11,7 +11,7 @@
 migrate_working_dir/
 
 # Example upload dir
-example/__upload__
+example/lib/server/__upload__
 
 # IntelliJ related
 *.iml
@@ -31,4 +31,4 @@ example/__upload__
 .dart_tool/
 .packages
 build/
-assets/test_resources
+example/assets

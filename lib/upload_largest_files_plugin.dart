@@ -28,7 +28,6 @@ class UploadLargestFilesPlugin {
   /// Returns:
   ///   A Future<void>
   static Future<void> loadJs(String filename) {
-    const isEnvironmentTest = bool.fromEnvironment('TEST_ENV');
     final Completer completer = Completer();
     final scriptUploadLargestFilesLib = ScriptElement();
 
@@ -38,9 +37,8 @@ class UploadLargestFilesPlugin {
     });
 
     /// It's loading the JavaScript file that contains the upload code.
-    scriptUploadLargestFilesLib.src = isEnvironmentTest
-        ? 'assets/$filename'
-        : 'assets/packages/upload_largest_files/assets/$filename';
+    scriptUploadLargestFilesLib.src =
+        '/assets/packages/upload_largest_files/assets/$filename';
 
     /// It's adding the JavaScript file to the body of the HTML page.
     document.body!.append(scriptUploadLargestFilesLib);

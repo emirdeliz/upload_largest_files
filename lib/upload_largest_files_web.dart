@@ -1,6 +1,3 @@
-@JS()
-library upload_largest_files;
-
 import 'dart:html';
 import 'package:js/js.dart';
 import 'package:upload_largest_files/upload_largest_files_constants.dart';
@@ -15,6 +12,7 @@ class UploadLargestFileJsEvent {
 }
 
 @JS('UploadLargestFilesJsProps')
+@anonymous
 class UploadLargestFilesJsProps {
   @JS('file')
   external File? file;
