@@ -32,7 +32,7 @@ generateUploadFiles() {
 }
 
 removeUploadDir() {
-	rm -rf assets
+	rm -rf assets && mkdir assets
 }
 
 main() {

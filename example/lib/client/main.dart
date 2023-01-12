@@ -10,13 +10,16 @@ class UploadLargestFilesApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'UploadLargestFiles Example',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      home: Scaffold(
+        backgroundColor: Color.fromRGBO(22, 27, 34, 1),
+        body: Center(
+          child: UploadLargestFilesAppHomePage(
+            title: 'UploadLargestFiles Example Home Page',
+          ),
+        ),
       ),
-      home: const UploadLargestFilesAppHomePage(
-          title: 'UploadLargestFiles Example Home Page'),
     );
   }
 }
