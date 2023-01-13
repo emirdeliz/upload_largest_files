@@ -1,0 +1,13 @@
+name: 'Setup Chrome'
+description: 'Install and setup Google Chrome and Chromium'
+author: 'emirdeliz'
+inputs:
+  chrome-version:
+    description: |-
+      The Google Chrome/Chromium version to install and use.
+    default: latest
+    required: false
+
+runs:
+  using: 'node16'
+  main: 'index.js'

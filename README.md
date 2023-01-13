@@ -12,23 +12,13 @@ The use is very simple. The upload largest files receive an object to make an up
 
 ```dart
 Future<void> _uploadFile(File file) async {
-	setState(() {
-		_isProcessing = true;
-		_progressValue = 0;
-	});
-
 	final props = UploadLargestFilesProps();
 	props.file = file;
 	props.url = '$serverHost/$uploadPath';
 	props.onProgress = (ProgressEvent p) async {
-		setState(() {
-			_progressValue = (p.loaded ?? 0) / (p.total ?? 1);
-			if (_progressValue >= 1) {
-				_isProcessing = false;
-			}
-		});
+		print('loaded: ' + p.loaded.toString());
+    print('total: ' + p.total.toString());
 	};
-
 	await uploadLargestFiles.uploadFile(props);
 }
 ```
