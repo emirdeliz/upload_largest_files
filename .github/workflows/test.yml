@@ -8,5 +8,6 @@ jobs:
         with:
           persist-credentials: false
           submodules: recursive
-      - uses: ./.github/actions
+      - uses: browser-actions/setup-chrome@latest
+      - run: chrome --version
       - run: CHROMIUM_BIN=$(which chrome) sh example/scripts/run-integration-test.sh
