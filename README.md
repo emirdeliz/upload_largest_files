@@ -13,14 +13,14 @@ The use is very simple. The upload largest files receive an object to make an up
 
 ```dart
 Future<void> _uploadFile(File file) async {
-	final props = UploadLargestFilesProps();
-	props.file = file;
-	props.url = '$serverHost/$uploadPath';
-	props.onProgress = (ProgressEvent p) async {
-		print('loaded: ' + p.loaded.toString());
+  final props = UploadLargestFilesProps();
+  props.file = file;
+  props.url = '$serverHost/$uploadPath';
+  props.onProgress = (ProgressEvent p) async {
+    print('loaded: ' + p.loaded.toString());
     print('total: ' + p.total.toString());
-	};
-	await uploadLargestFiles.uploadFile(props);
+  };
+  await uploadLargestFiles.uploadFile(props);
 }
 ```
 
