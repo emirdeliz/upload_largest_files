@@ -1,6 +1,6 @@
 # upload_largest_files
-
-[![Upload largest files: Tests](https://github.com/emirdeliz/upload_largest_files/actions/workflows/main.yml/badge.svg)](https://github.com/emirdeliz/upload_largest_files/actions/workflows/main.yml)
+<!-- 
+[![Upload largest files: Tests](https://github.com/emirdeliz/upload_largest_files/actions/workflows/main.yml/badge.svg)](https://github.com/emirdeliz/upload_largest_files/actions/workflows/main.yml) -->
 
 This plugin is a wrapper for the project [Upload largest Files](https://github.com/emirdeliz/upload-largest-files) to make uploads on the web. See the example for more details. See the example for more details. Before running the example you should start the upload server on the folder: `example/lib/server`.
 
