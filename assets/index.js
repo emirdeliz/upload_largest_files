@@ -3,7 +3,7 @@ const Methods = {
 	progressUploadUpdate: 'progressUploadUpdate',
 };
 
-window.jsInvokeMethod = async (method, uploadProps) => {
+window.jsInvokeMethod = function (method, uploadProps) {
 	switch (method) {
 		case Methods.uploadFile: {
 			uploadProps.onProgress = function (progress) {
