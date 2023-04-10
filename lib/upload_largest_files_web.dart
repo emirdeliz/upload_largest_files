@@ -22,6 +22,9 @@ class UploadLargestFilesJsProps {
 
   @JS('headers')
   external Object? headers;
+
+  @JS('httpMethod')
+  external Object? httpMethod;
 }
 
 @JS('jsOnEvent')
@@ -34,6 +37,7 @@ class UploadLargestFilesProps {
   File? file;
   String? url;
   Object? headers;
+  String? httpMethod;
   Function(ProgressEvent progress)? onProgress;
 }
 

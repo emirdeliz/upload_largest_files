@@ -1,6 +1,6 @@
 name: upload_largest_files
 description: A flutter web plugin to upload largest files in web.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/emirdeliz/upload_largest_files
 
 environment:
