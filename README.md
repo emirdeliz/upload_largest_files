@@ -31,4 +31,5 @@ About **UploadLargestFilesProps**:
 | **file** (required)       | File                             | The upload file.                                           |
 | **url** (required)        | String                           | The server URL to make an upload.                          |
 | **headers** (optional)    | Object                           | The request headers to make an upload.                     |
+| **httpMethod** (optional) | POST,GET,PUT,PATCH               | The method to make upload (POST is default).               |
 | **onProgress** (optional) | Function(ProgressEvent progress) | The callback function to make follow the upload progress.. |
